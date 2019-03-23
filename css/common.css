@@ -1,0 +1,78 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body,html{
+	background: #ededed;
+}
+table td{
+	text-align: center;
+	border: 1px solid ededed;
+	height: 45px;
+}
+table td:hover{
+	background: #fff;
+	cursor:pointer
+}
+table td{
+	background: gainsboro;
+	color: #444;
+}
+table td:first-child{
+	background: #6495ED;
+	color: #fff;
+}table td:first-child:hover{
+	background: blue;
+	cursor:pointer
+}
+.logo{
+	position: fixed;
+	right: 30px;
+	color: ;
+	text-shadow: 1px 0 1px #6495ED;
+}
+.logo img{
+	width: 100px;
+	height: 100px;
+}
+.content{
+	width: 900px;
+	min-height: 800px;
+	margin: 0 auto;
+	background: #fff;
+	box-shadow: 0 0 1px 1px rgba(0,0,0,0.3);
+}
+.title{
+	background: cornflowerblue;
+	font-size: 30px;
+	padding-left: 15px;
+	text-shadow: 2px 0 1px #000;
+	color: #fff;
+}
+.line{
+	display:  inline-block;
+	white-space: nowrap;
+}
+.line div{
+	display: inline-block;
+	position: relative;
+	width: 145px;
+	overflow: hidden;
+	overflow: hidden;
+	padding: 20px 0;
+	box-sizing: border-box;
+	text-align: center;
+}
+.item{
+	width: 100%;
+	overflow: hidden;
+}
+.item img{
+	width: 70%;
+	width: 100px;
+	height: 120px;
+	box-shadow: 0 0 1px 1px #999;
+}
+img:hover{
+	cursor:pointer
+}
