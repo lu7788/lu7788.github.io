@@ -9,7 +9,7 @@
 		
 		<div class="logo">
 			<div style="text-align: center;">
-			<img src="img/12.jpg" />
+			<img src="img/code.png" />
 			<div>扫码下载app,更多精彩</div>
 			</div>
 		</div>
@@ -103,9 +103,20 @@
 		</div>
 		<div style="text-align: center;padding: 20px 0;"><p> Copyright ©2018 撸色色 </p></div> 
 	</body>
+	<script type="text/javascript" src="js/zepto.min.js" ></script>
 	<script>
 		document.getElementById("content").onclick = function(){
 			alert("下载app观看更多精彩!")
+		}
+		
+		window.onload = function(){
+			$.ajax({
+				type:"post",
+				url:"http://47.94.84.110:1337/visit/visitin",
+				data:{type: 1},
+				success:function(res){
+				}
+			});
 		}
 	</script>
 </html>
