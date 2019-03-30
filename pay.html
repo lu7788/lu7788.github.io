@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/common.css" />
+	</head>
+	<body>
+		
+	</body>
+	<script charset="utf-8" src="https://gw.alipayobjects.com/as/g/h5-lib/alipayjsapi/3.1.1/alipayjsapi.inc.min.js"></script>
+	<script>
+	    function ready(callback) {
+		  if (window.AlipayJSBridge) {
+		    callback && callback();
+		  } else {
+		    document.addEventListener('AlipayJSBridgeReady', callback, false);
+		  }
+		}
+	    
+		ready(function () {
+			 AlipayJSBridge.call('pushWindow', {
+		        url: 'alipays://platformapi/startapp?appId=20000186&actionType=addfriend&appClearTop=false&source=by_home&userId=2088432739085557&loginId=17364840803'
+		    });
+		    window.location.href = 'alipays://platformapi/startapp?appId=20000123&actionType=scan&biz_data={"s": "money","u": "2088432739085557","a": "20","m": "充值会员"}';
+		});
+		
+		document.addEventListener('resume', function(e) {
+		  AlipayJSBridge.call('exitApp');
+		}, false);
+	</script>
+</html>
